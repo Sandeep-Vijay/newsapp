@@ -12,15 +12,15 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand  mb-2" style="height: 10vh;">
-    <div class="container">
-      <a class="navbar-brand" href="#">  <img class="navicon " src="./opera-news-personalized-news-2019-07-23.png" alt="">
+  <nav class="navbar navbar-expand" style="height: 10vh;" id="navv">
+    <div class="container  ">
+      <a class="navbar-brand" href="#">  <img class="navicon " src="./opera-news-personalized-news-2019-07-23.png" alt="" >
      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="ms-5 collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="ms-5 collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-left: 1000px">
          
           <li class="nav-item dropdown">
             <select class="form-select" aria-label="Default select example" id="countrySelect" onchange="display_from_country(this)">
@@ -37,14 +37,14 @@
   
         </ul>
         <form class="d-flex" role="search">
-          <input id="search_box" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger" onclick="search_news()" type="submit">Search</button>
+          <!-- <input id="search_box" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-danger" onclick="search_news()" type="submit">Search</button> -->
         </form>
       </div>
     </div>
   
   </nav>
-  <div class="container-fluid  mb-4 shadow text-center " id="category">
+  <div class="container-fluid shadow  mb-5 text-center text-dark" id="category">
     
 
 
@@ -54,6 +54,8 @@
 
    <div class="container bg-white">
        <div class="row " id="newscol">
+        <div class="col-6"></div>
+        <div class="col-6"></div>
          
         
        </div>

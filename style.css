@@ -3,9 +3,10 @@
 }
 #category{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: rgb(168,85,85);
-    background: radial-gradient(circle, rgba(168,85,85,1) 0%, rgba(105,48,48,1) 100%);
-    height:100px;
+    background: rgb(255, 255, 255);
+    
+   
+    height:60px;
     display: flex;
     justify-content: center;
     vertical-align: middle;
@@ -13,9 +14,13 @@
 
     
 }
+#navv{
+    background: rgb(168,85,85);
+    background: radial-gradient(circle, rgba(168,85,85,1) 0%, rgba(105,48,48,1) 100%);
+}
 .news_title{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: xx-large;
+    font-size: 1cm;
     font-weight: 600;
 }
 .des{
@@ -24,4 +29,10 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 .navicon{
     width: 80px;
+    border-radius: 30px;
+}
+.time_author{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 400;
 }

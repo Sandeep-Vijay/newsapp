@@ -8,18 +8,23 @@ function displayData(data){
         var description=d.description?d.description:"No Description Available"
         var image=d.urlToImage?d.urlToImage:"No Image Available"
         var date=d.publishedAt?d.publishedAt:"Unknown"
+        var date=date.substring(0,10)
         var url=d.url?d.url:"#"
         var author=d.author?d.author:"Unknown"
         var content=d.content?d.content:"No Content Available"
         var sourcename=d.source.name?d.source.name:"unknown"
 
         htmlData += `
-        <div class=" my-3 border border-dark  p-3">
+        <div class=" my-3 border border-dark  p-3 shadow">
           <div class="row">
             <div class="col-6">
-            <h6><span class="time_author">Published :</span>${sourcename}</h6>
-            <span class="news_title ">${title}</span>
+            <h6  class="time_author"><span>Published :</span>${sourcename}</h6>
+            <span class="news_title">${title}</span>
+            <h5><span class="time_author"></span>${date}</h5>
             </div>
+    
+                 
+              
             <div class="col-6 w-50">
               
               <img class="newsimg" src="${image}" alt="">
@@ -34,12 +39,10 @@ function displayData(data){
                 <div>
                   <h5><span class="time_author">Author :</span>${author}</h5>
                 </div>
-                <div>
-                  <h5><span class="time_author">Time :</span>${date}</h5>
-                </div>
+                
               </div>
-              <div class="my-4">
-                <a href="${url}" class="btn btn-danger">Read More</a>
+              <div class="my-4 text-center">
+                <a href="${url}" class="btn btn-danger w-25 shadow mx-auto">Read More</a>
               </div>
             </div>
           </div>
@@ -53,7 +56,7 @@ function displayData(data){
   htmlData1="";
   for(c of category){
     htmlData1+=`
-    <button class="btn text-white" onclick="newsFliterByCategory('${c}')"><h5>${c}</h5></button>`
+    <button class="btn" onclick="newsFliterByCategory('${c}')"><h5>${c}</h5></button>`
     
 
   }
